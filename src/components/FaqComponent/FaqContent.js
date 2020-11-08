@@ -13,14 +13,16 @@ export default class FaqContent extends Component {
           <p className="text">
             Dairy manure separator solids are combined with green and equestrian
             materials, formed into windrows on the composting pad and adjusted
-            for moisture as needed. Windrows are managed in accordance with
+            for moisture as needed.
+            {/*Windrows are managed in accordance with
             CalRecycle (and Nicasio Blend under the USDA National Organic
             Program (NOP)) guidelines to reduce pathogens and weed viability to
-            negligible levels. Microbes, naturally present in the compost pile,
-            cause the pile to heat up. Temperatures are taken daily to assure
-            that sufficient high temperature levels have been met. A mechanical
-            screen is used to separate coarse from fine material at the end of
-            the process once the compost has reached maturity.
+            negligible levels. */}
+            Microbes, naturally present in the compost pile, cause the pile to
+            heat up. Temperatures are taken daily to assure that sufficient high
+            temperature levels have been met. A mechanical screen is used to
+            separate coarse from fine material at the end of the process once
+            the compost has reached maturity.
           </p>
 
           <h2>What about noxious or diseased weeds?</h2>

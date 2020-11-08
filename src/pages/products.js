@@ -253,7 +253,8 @@ const ProductsPage = () => (
           <CompostItem
             image={data.deckMix}
             name="Marin Deck Mix"
-            description="The ultimate affordable soil amendment, Deck Mix is a blend of all our products that occurs when we sweep our loading area. You'll find Nicasio Blend, Organic Hi-Test Compost, Mallard Plus, Feather-Lite Amended Soil and our various mulches in this blend. Use Deck Mix as a mulch or amendment for flowers, shrubs and trees. Not recommended for veggies. Supply is limited."
+            // Took out "Organic" from Hi-Test Compost
+            description="The ultimate affordable soil amendment, Deck Mix is a blend of all our products that occurs when we sweep our loading area. You'll find Nicasio Blend, Hi-Test Compost, Mallard Plus, Feather-Lite Amended Soil and our various mulches in this blend. Use Deck Mix as a mulch or amendment for flowers, shrubs and trees. Not recommended for veggies. Supply is limited."
             price="$7 per cubic yard"
           />
           <CompostItem

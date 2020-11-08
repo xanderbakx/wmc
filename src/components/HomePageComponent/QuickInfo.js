@@ -61,20 +61,20 @@ export default class QuickInfo extends Component {
                 <li>Optimized nutrient management</li>
                 <li>Sequester carbon (carbon farming/gardening)</li>
               </ul>
-              <Img
+              {/* <Img
                 style={{ maxWidth: 300, margin: "3rem auto 1rem auto" }}
                 fluid={data.cdfa.childImageSharp.fluid}
               />
               <p style={{ textAlign: "center", fontSize: "0.9rem" }}>
                 Nicasio Blend is Organic. More to follow soon.
-              </p>
+              </p> */}
               <hr />
 
-              <h3>
+              <h5>
                 Reuse your vegetable scraps at home and recycle. Take a walk
                 through the West Marin Compost site to learn more about organics
                 recycling.
-              </h3>
+              </h5>
               <div
                 style={{
                   margin: "1rem 0",
