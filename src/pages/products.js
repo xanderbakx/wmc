@@ -144,10 +144,10 @@ const ProductsPage = () => (
         </PageHeader>
 
         <ProductsWrapper>
-          <Img
+          {/* <Img
             fluid={data.ad.childImageSharp.fluid}
             style={{ maxWidth: "400px", margin: "1rem auto 1.5rem auto" }}
-          />
+          /> */}
           <p className="text">
             Please, browse this page to select the product that works best for
             your soil, your plants and you. You can refer to the table to

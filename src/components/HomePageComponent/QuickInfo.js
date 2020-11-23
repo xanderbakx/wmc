@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import { styles } from "../../utils"
 
 import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+//import Img from "gatsby-image"
 
 export default class QuickInfo extends Component {
   render() {
@@ -32,10 +32,10 @@ export default class QuickInfo extends Component {
         render={data => (
           <Section>
             <QuickInfoWrapper>
-              <Img
+              {/* <Img
                 style={{ maxWidth: 300, margin: "3rem auto 1rem auto" }}
                 fluid={data.sale.childImageSharp.fluid}
-              />
+              /> */}
               {/* <h2>Free Drop Off Program Has Ended</h2>
           <p className="text">Due to the overwhelming response to the Free Green Waste Days for defensible space clearing at West Marin Compost – the facility is at capacity and cannot accept anymore material. We are sorry to have to CANCEL the last day. Please pass the word.</p>
           {/* <h1 style={{ color: '#69bd45' }}>Free Green Waste Days</h1>
