@@ -220,11 +220,10 @@ const ProductsPage = () => (
             price="$45 per cubic yard"
           />
           <CompostItem
-            id="sale"
             image={data.vineyardMulch}
             name="Marin Vineyard Mulch"
             description="An affordable, organic alternative to expensive bark products. It suppresses weeds, conserves moisture, moderates soil temperatures, improves soil structure and controls erosion. Vineyard Mulch undergoes a brief composting process at over 131°F that renders it virtually free of weed seeds and plant pathogens. As it slowly breaks down, it provides the organic matter, nutrients and microbes that help plants thrive. Worms thrive in soils that have a generous layer of Vineyard Mulch. Their tunneling activities allow oxygen to get to plant roots and their castings provide a beneficial nutrient input. Does not float."
-            price="$6 per cubic yard"
+            price="$18 per cubic yard"
           />
           <CompostItem
             image={data.ultraLight}
