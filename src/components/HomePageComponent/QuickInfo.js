@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import { styles } from "../../utils"
 
 import { StaticQuery, graphql } from "gatsby"
-//import Img from "gatsby-image"
+import Img from "gatsby-image"
 
 export default class QuickInfo extends Component {
   render() {
@@ -61,13 +61,13 @@ export default class QuickInfo extends Component {
                 <li>Optimized nutrient management</li>
                 <li>Sequester carbon (carbon farming/gardening)</li>
               </ul>
-              {/* <Img
+              <Img
                 style={{ maxWidth: 300, margin: "3rem auto 1rem auto" }}
                 fluid={data.cdfa.childImageSharp.fluid}
               />
               <p style={{ textAlign: "center", fontSize: "0.9rem" }}>
                 Nicasio Blend is Organic. More to follow soon.
-              </p> */}
+              </p>
               <hr />
 
               <h5>

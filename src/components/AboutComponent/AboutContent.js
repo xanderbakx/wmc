@@ -18,10 +18,10 @@ export default class AboutContent extends Component {
           <p className="text">
             Green and equestrian discard materials used to be trucked out of
             West Marin to facilities in East Marin or beyond. Diversion of West
-            Marin {/* organic */}discard materials away from landfill disposal
-            to reuse within West Marin will benefit all Marin residents.
-            Composting in Marin will reduce greenhouse gasses in the landfill
-            while creating high quality soil amendments locally.
+            Marin organic discard materials away from landfill disposal to reuse
+            within West Marin will benefit all Marin residents. Composting in
+            Marin will reduce greenhouse gasses in the landfill while creating
+            high quality soil amendments locally.
           </p>
 
           <h2>
