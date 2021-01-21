@@ -1,12 +1,11 @@
 import React, { Component } from "react"
 import { Section, SectionButton } from "../../utils"
-import styled from "styled-components"
 import { Link } from "gatsby"
-import { styles } from "../../utils"
-
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import styled from "styled-components"
+import { styles } from "../../utils"
 export default class QuickInfo extends Component {
   render() {
     return (
