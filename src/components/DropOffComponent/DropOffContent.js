@@ -56,8 +56,8 @@ export default class DropOffContent extends Component {
             site.
           </p>
           <p className="text">
-            Only clean green material (yard debris and wood scraps) will be
-            accepted at the drop off site.
+            Only clean green material (yard debris) will be accepted at the drop
+            off site.
           </p>
           <p className="text">
             <b>Tipping fee: </b>A tipping fee is charged for all materials
@@ -77,7 +77,7 @@ export default class DropOffContent extends Component {
             <div className="grid-item">Tree stumps up to 3' diameter</div>
             <div className="grid-item">$330 each</div>
             <div className="grid-item">Dimensional lumber/wood scraps</div>
-            <div className="grid-item">$30/cubic yard</div>
+            <div className="grid-item">Will no longer be accepted</div>
           </div>
 
           <p className="text">

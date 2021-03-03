@@ -85,7 +85,7 @@ const ProductsPage = () => (
             }
           }
         }
-        chunkyMulch: file(relativePath: { eq: "chunkyMulch.png" }) {
+        topperMulch: file(relativePath: { eq: "chunkyMulch.png" }) {
           childImageSharp {
             fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
@@ -238,9 +238,9 @@ const ProductsPage = () => (
             price="$15 per cubic yard"
           />
           <CompostItem
-            image={data.chunkyMulch}
-            name="Chunky Mulch"
-            description="This is a dark woody mulch that has gone through a full compost process. It provides the same benefits as Vineyard mulch or Blond Mulch, but will break down faster, since the compost process has impregnated the wood with fungi. As the mulch contains also some fines it will also provide some nutrients over time. Some of this product may float when flooded."
+            image={data.topperMulch}
+            name="Topper Mulch"
+            description="This is a dark mulch that has gone through a full compost process. It provides the same benefits as Vineyard mulch, and is perfect for use as a durable top dressing around herbaceous perennials, shrubs, and trees to protect the soil, help conserve water and suppress weeds.  As the mulch contains some fines it will also provide some nutrients over time. Some of this product may float when flooded."
             price="$10 per cubic yard"
           />
           <CompostItem
