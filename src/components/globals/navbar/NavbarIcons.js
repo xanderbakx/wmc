@@ -4,30 +4,16 @@ import { styles } from "../../../utils"
 import { FaFacebook } from "react-icons/fa"
 
 export default class NavbarIcons extends Component {
-  state = {
-    icons: [
-      {
-        id: 0,
-        icon: <FaFacebook className="icon facebook-icon" />,
-        path: "https://www.facebook.com/westmarincompost",
-      },
-    ],
-  }
   render() {
     return (
       <IconWrapper>
-        {this.state.icons.map(item => {
-          return (
-            <a
-              href={item.path}
-              key={item.id}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {item.icon}
-            </a>
-          )
-        })}
+        <a
+          href="https://www.facebook.com/westmarincompost"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaFacebook className="icon facebook-icon" />
+        </a>
       </IconWrapper>
     )
   }
@@ -47,8 +33,10 @@ const IconWrapper = styled.div`
   }
   display: none;
   @media (min-width: 768px) {
+    height: auto;
     display: flex;
-    width: 4rem;
-    justify-content: space-around;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
   }
 `

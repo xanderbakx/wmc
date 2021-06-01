@@ -10,24 +10,6 @@ export default class DropOffContent extends Component {
       <Section>
         <Title message="" title="Got Yard Debris?" />
         <DropOffContentWrapper>
-          {/* <div id="greenWaste">
-            <h2>Free Drop Off Program Has Ended</h2>
-            <p className="text">
-              Due to the overwhelming response to the Free Green Waste Days for
-              defensible space clearing at West Marin Compost – the facility is
-              at capacity and cannot accept anymore material. We are sorry to
-              have to CANCEL the last day. Please pass the word.
-            </p>
-            <h1 style={{ color: '#69bd45' }}>Free Green Waste Days</h1>
-            <h3>June 6th &amp; 20th | July 11th &amp; 25th</h3>
-            <h5><i>Marin Residents Only</i></h5>
-            <h5><i>Residential Yard Debris Only</i></h5>
-            <h5>Hours: 9am - 4pm</h5>
-            <a href={greenWasteDay} target="_blank" rel="noopener noreferrer"><img src={greenWasteImg} alt="Green Waste" width="30%"></img></a>
-          </div>
-
-          <hr /> */}
-
           <h2>The green materials drop off site is open to the public:</h2>
           <p className="text" style={{ fontWeight: 600 }}>
             Monday - Saturday from 7:00am to 3:00pm

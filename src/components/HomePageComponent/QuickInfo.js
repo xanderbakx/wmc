@@ -3,6 +3,7 @@ import { Section, SectionButton } from "../../utils"
 import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import styled from "styled-components"
 import { styles } from "../../utils"
@@ -31,19 +32,31 @@ export default class QuickInfo extends Component {
         render={data => (
           <Section>
             <QuickInfoWrapper>
-              {/* <Img
-                style={{ maxWidth: 300, margin: "3rem auto 1rem auto" }}
-                fluid={data.sale.childImageSharp.fluid}
-              /> */}
-              {/* <h2>Free Drop Off Program Has Ended</h2>
-          <p className="text">Due to the overwhelming response to the Free Green Waste Days for defensible space clearing at West Marin Compost – the facility is at capacity and cannot accept anymore material. We are sorry to have to CANCEL the last day. Please pass the word.</p>
-          {/* <h1 style={{ color: '#69bd45' }}>Free Green Waste Days</h1>
-          <h3>June 6th &amp; 20th | July 11th &amp; 25th</h3>
-          <h5><i>Marin Residents Only</i></h5>
-          <h5><i>Residential Yard Debris Only</i></h5>
-          <h5>Hours: 9am - 4pm</h5>
-
-          <a href={greenWasteDay} target="_blank" rel="noopener noreferrer"><img src={greenWasteImg} alt="Green Waste" width="30%"></img></a> */}
+              <h2>Defensible Space Green Material Drop Off Dates 2021</h2>
+              <p className="text">
+                As the fire season is already upon us, West Marin Compost and
+                Marin County Fire will be hosting two days where West Marin
+                residents can drop off yard debris to facilitate a fire safe
+                environment around their homes. The Marin County Fire department
+                will be on site to facilitate the drop-off and may be available
+                to answer questions, depending on time availability. Please use
+                this event as an opportunity to walk around your home to assure
+                you have created a Defensible Space. For more information on
+                Defensible Space see this{" "}
+                <a href="https://www.marincounty.org/-/media/files/departments/fr/prevention/2017/dspacebrochure4pg.pdf?la=en">
+                  brochure
+                </a>
+                .
+              </p>
+              <h3>July 10th | August 14th</h3>
+              <h5>
+                <i>Marin Residents Only</i>
+              </h5>
+              <h5>
+                <i>Residential Yard Debris Only</i>
+              </h5>
+              <h5>Hours: 7am - 3pm</h5>
+              <hr />
 
               <h2>Organics Recycling: Good for the environment</h2>
               <p className="text">
@@ -60,6 +73,20 @@ export default class QuickInfo extends Component {
                 <li>Optimized nutrient management</li>
                 <li>Sequester carbon (carbon farming/gardening)</li>
               </ul>
+              {/* "Know more" links */}
+              <p>
+                Find out more about{" "}
+                <AnchorLink to="/education#carbon-farming">
+                  Carbon Gardening
+                </AnchorLink>{" "}
+                and how you can help mitigate climate change.
+              </p>
+              <p>
+                Examine your home and garden for fire safety. Yard debris for
+                clearing to meet defensible space requirements can be{" "}
+                <AnchorLink to="/education#">dropped off</AnchorLink> at West
+                Marin Compost on July 10th and August 14th.
+              </p>
               <Img
                 style={{ maxWidth: 300, margin: "3rem auto 1rem auto" }}
                 fluid={data.cdfa.childImageSharp.fluid}
@@ -159,8 +186,8 @@ const QuickInfoWrapper = styled.div`
     width: 80%;
     list-style-type: none;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
   }
   li {
@@ -170,6 +197,9 @@ const QuickInfoWrapper = styled.div`
   }
   p {
     text-align: left;
+  }
+  a {
+    color: ${styles.colors.mainGreen};
   }
   .text {
     line-height: 2rem;
