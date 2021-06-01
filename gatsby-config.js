@@ -16,6 +16,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-anchor-links`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -32,4 +33,7 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
+  // flags: {
+  //   DEV_SSR: false
+  // }
 }

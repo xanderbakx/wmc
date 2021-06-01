@@ -5,6 +5,10 @@ import { styles } from "../../utils"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import carbon1 from "../../documents/CarbonGardeningPart1.pdf"
+import carbon2 from "../../documents/CarbonGardeningPart2.pdf"
+import carbon3 from "../../documents/CarbonGardeningPart3.pdf"
+
 export default class EducationContent extends Component {
   render() {
     return (
@@ -34,28 +38,6 @@ export default class EducationContent extends Component {
               title="West Marin Compost hopes that you will visit our website regularly to find out about events, workshops, articles, and videos"
             />
             <EducationContentWrapper>
-              <p className="text">
-                Will Bakx will be presenting the healthy soils and carbon
-                sequestration sections of the next online{" "}
-                <a
-                  href="https://rescape.memberclicks.net/index.php?option=com_jevents&task=icalrepeat.detail&evid=239&Itemid=149&year=2020&month=09&day=17&title=rescape-design-qualification-training-online&uid=70a8b82b656fde91e4b7f3eb34234fb9"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <b>Rescape Design Qualification Training.</b>
-                </a>
-              </p>
-
-              <Img
-                id="gardener"
-                style={{
-                  margin: "1rem auto 1rem auto",
-                  border: "2px solid lightgrey",
-                  width: "75%",
-                }}
-                fluid={data.rescape.childImageSharp.fluid}
-              />
-
               <h2 style={{ paddingTop: "2rem" }}>Carbon Farming</h2>
               <p className="text">
                 Increasing organic matter in our soils helps building healthy
@@ -112,18 +94,46 @@ export default class EducationContent extends Component {
                   allowFullScreen
                 />
               </div>
+              <div id="carbon-gardening"></div>
               <h2>Getting started with carbon gardening</h2>
               <p className="text">
                 We can also do our part of carbon sequestration in the backyard.
-                The same principals apply.
-                <a
-                  href="http://www.igrowsonoma.org/wp-content/uploads/2015/09/climate-friendly-gardener-ucs.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Here
-                </a>
-                is an educational article that will get you going.
+                The same principals apply as in carbon farming. Here are some
+                educational articles that will get you going:
+              </p>
+              {/* Articles */}
+              <ul>
+                <li>
+                  <a href={carbon1} target="_blank" rel="noopener noreferrer">
+                    Carbon Gardening Part 1
+                  </a>
+                  : Introduction to sequestering carbon
+                </li>
+                <li>
+                  <a href={carbon2} target="_blank" rel="noopener noreferrer">
+                    Carbon Gardening Part 2
+                  </a>
+                  : Sequestering carbon with mulch
+                </li>
+                <li>
+                  <a href={carbon3} target="_blank" rel="noopener noreferrer">
+                    Carbon Gardening Part 3
+                  </a>
+                  : Sequestering carbon with compost
+                </li>
+              </ul>
+              <p className="text">
+                Compost and mulches will build organic matter in the soil. As we
+                increase organic matter in the soil many benefits are the
+                result. The most timely are that increased soil organic matter
+                results in great water savings and help mitigate climate change.
+                Mitigating climate change means that we can look at a future
+                where extreme fires, droughts, floods, etc. are not the norm
+                anymore. Meanwhile, enjoy slow release nutrients from compost, a
+                diverse, large population of microorganisms that aids to reduce
+                or eliminate pesticides, weed suppression that can reduce or
+                eliminate the use of herbicides. Mulches can keep the soil
+                warmer in winter and cooler in summer.
               </p>
               <a
                 href="http://www.igrowsonoma.org/wp-content/uploads/2015/09/climate-friendly-gardener-ucs.pdf"
@@ -167,7 +177,7 @@ const EducationContentWrapper = styled.div`
   }
   a {
     text-decoration: none;
-    color: ${styles.colors.mainBrown};
+    color: ${styles.colors.mainGreen};
   }
   .text {
     line-height: 2rem;

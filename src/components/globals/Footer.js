@@ -1,7 +1,13 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import { styles } from "../../utils"
-import { FaEnvelope, FaFacebook, FaPhone, FaMapMarkerAlt } from "react-icons/fa"
+import {
+  FaEnvelope,
+  FaFacebook,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaClock,
+} from "react-icons/fa"
 
 export default class Footer extends Component {
   state = {
@@ -35,6 +41,10 @@ export default class Footer extends Component {
           ))}
         </div>
         <div>
+          <p className="text">
+            <FaClock style={{ marginRight: "1rem" }} />
+            7:00 am - 3:00 pm
+          </p>
           <p className="text">
             <FaPhone style={{ marginRight: "1rem" }} />
             (415) 662-9849
@@ -77,7 +87,6 @@ const FooterWrapper = styled.footer`
   }
   .text {
     color: ${styles.colors.mainWhite};
-    text-transform: capitalize;
     text-align: center;
     margin: 1rem 0;
   }
