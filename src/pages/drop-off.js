@@ -1,11 +1,9 @@
 import React from "react"
-// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
 import { PageHeader, Banner } from "../utils"
-import dropOffImg from "../images/compost-piles.jpg"
+import dropOffImg from "../images/compost-piles3.png"
 import DropOffContent from "../components/DropOffComponent/DropOffContent"
 
 const DropOffPage = () => (

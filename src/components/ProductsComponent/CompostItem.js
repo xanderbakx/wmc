@@ -51,7 +51,6 @@ const GridWrapper = styled.div`
   @media (min-width: 600px) {
     .compostImg {
       margin: 0 1rem 1rem 0;
-      /* padding: 1rem; */
     }
     display: grid;
     grid-template-columns: 1fr 3fr;

@@ -17,6 +17,7 @@ import priceListSp from "../documents/WMC_Lista_de_Precios_2020.pdf"
 
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const ProductsPage = () => (
   <StaticQuery
@@ -169,12 +170,22 @@ const ProductsPage = () => (
 
           <div id="buttons">
             <Button variant="secondary" style={{ margin: "0 0.3rem" }}>
-              <a href={priceListEng} target="_blank" rel="noopener noreferrer">
+              <a
+                className="priceList"
+                href={priceListEng}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Get your PDF of our pricelist here
               </a>
             </Button>
             <Button variant="secondary" style={{ margin: "0 0.3rem" }}>
-              <a href={priceListSp} target="_blank" rel="noopener noreferrer">
+              <a
+                className="priceList"
+                href={priceListSp}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Obtenga su PDF de nuestra lista de precios aquí
               </a>
             </Button>
@@ -184,61 +195,79 @@ const ProductsPage = () => (
             message=""
             title="Click on the compost items below to learn more"
           />
+
           <CompostItem
+            key="1"
             image={data.nicasio}
             name="Nicasio Blend"
             description="This dark, rich, premium quality compost is made from recycled yard trimmings, dairy manure and horse manure. Nicasio Blend is recommended for applications that do not require high nitrogen content such as trees, shrubs, grape vines and natives. It provides valuable organic matter to soil, making it easier to work and more productive. In sandy soil it increases moisture-holding capacity, making soil nutrients more available to plants. In heavy clay soils, porosity is increased which improves aeration in the root zone and overall drainage."
             price="$30.00 per cubic yard"
           />
           <CompostItem
+            key="2"
             image={data.hiTest}
             name="Marin Hi-Test Compost"
             description="All the benefits of Nicasio Blend but with higher nitrogen content from the inclusion of High-N Manure such as goat and chicken. Hi-Test Compost is great for new gardens and landscapes, especially where soils have been neglected or overworked. In addition to improving soil structure, our Hi-Test Compost will give new plants the nitrogen needed for a vibrant start."
             price="$40.00 per cubic yard"
           />
           <CompostItem
+            key="3"
             image={data.mallardPlus}
             name="Marin Mallard Plus"
             description="All the benefits of Hi-Test Compost, but designed for use in poorly drained soils. Mallard Plus is great for clay soils and raised beds mixed with good garden soil."
             price="$42.00 per cubic yard"
           />
           <CompostItem
+            key="4"
             image={data.livingBiochar}
             name="Marin Hi-Test Living Biochar"
             description="Our Hi-Test Compost was amended with biochar to have 15% biochar by volume in the finished product. Since the biochar has been in process with the Hi-Test Compost, the biochar is now fully charged with microbes and nutrients. See below for further details on biochar."
             price="$54.00 per cubic yard"
           />
           <CompostItem
+            key="5"
             image={data.vineyardMulch}
             name="Marin Vineyard Mulch"
             description="An affordable, organic alternative to expensive bark products. It suppresses weeds, conserves moisture, moderates soil temperatures, improves soil structure and controls erosion. Vineyard Mulch undergoes a brief composting process at over 131°F that renders it virtually free of weed seeds and plant pathogens. As it slowly breaks down, it provides the organic matter, nutrients and microbes that help plants thrive. Worms thrive in soils that have a generous layer of Vineyard Mulch. Their tunneling activities allow oxygen to get to plant roots and their castings provide a beneficial nutrient input. Does not float."
             price="$22.00 per cubic yard"
           />
           <CompostItem
+            key="6"
             image={data.ultraLight}
             name="Ultra-Light Mulch"
             description="The hybrid mulch that has qualities of both compost and mulch will finish off any landscape just perfectly. Like any other mulch it stays on the surface of the soil and is not incorporated into the soil. While the mulch will initially act as a weed suppressant, as it breaks down it will help feed your soil. As the name implies, this mulch is lightweight and easy to work with. Landscapers specify Ultra-Light Mulch when a neat appearance or distinctive border is desired. Not recommended in windy areas."
             price="$18.00 per cubic yard"
           />
           <CompostItem
+            key="7"
             image={data.treeMulch}
             name="Tree Mulch"
             description="It is derived from tree stumps and logs. Tree mulch provides the same overall benefits to the soil as the Vineyard Mulch. Due to its woodier nature it will last longer, but provide less nutrients. Offered screened Medium (<1.5”) or coarse (>1.5”)."
             price="$15 per cubic yard"
           />
+          <div id="topperMulch"></div>
           <CompostItem
+            key="8"
             image={data.topperMulch}
             name="Topper Mulch"
             description="This is a dark mulch that has gone through a full compost process. It provides the same benefits as Vineyard mulch, and is perfect for use as a durable top dressing around herbaceous perennials, shrubs, and trees to protect the soil, help conserve water and suppress weeds.  As the mulch contains some fines it will also provide some nutrients over time. Some of this product may float when flooded."
             price="$10 per cubic yard"
           />
           <CompostItem
+            key="9"
             image={data.pathMulch}
             name="Marin Path Mulch"
-            description="We no longer carry Path Mulch. We recommend the use of our Topper Mulch instead."
+            description={[
+              "We no longer carry Path Mulch. We recommend the use of our ",
+              <AnchorLink to="/products#topperMulch" className="topper">
+                Topper Mulch
+              </AnchorLink>,
+              " instead.",
+            ]}
             price="Discontinued"
           />
           <CompostItem
+            key="10"
             image={data.deckMix}
             name="Marin Deck Mix"
             // Took out "Organic" from Hi-Test Compost
@@ -246,23 +275,27 @@ const ProductsPage = () => (
             price="$7 per cubic yard"
           />
           <CompostItem
+            key="11"
             image={data.amendedSoil}
             name="Marin Amended Soil"
             description="Plant directly into Amended Soil. It’s great for filling raised beds, replacing poor quality soil, adding elevation or leveling a project site, or filling in behind a retaining wall. Amended Soil is a good-looking blend of clean soil and Mallard Plus. Since a high-quality topsoil is used, rather than a mined soil, no weed-free guarantees can be made."
             price="$54.00 per cubic yard"
           />
           <CompostItem
+            key="12"
             image={data.biochar}
             name="Marin Biochar"
             description="Biochar (or agrichar) is one of the products created when high-carbon materials such as forest bi-products are gasified under low oxygen conditions (pyrolysis). The process produces both syngas for green energy and biochar to be used as a soil amendment. Biochar is applied only once, but the results will last forever as long as you keep your soil biologically active. Annual applications of compost, mulch, cover crop, etc. will recharge the biochar over the years."
             price="$200.00 per cubic yard"
           />
           <CompostItem
+            key="13"
             image={data.compostBlends}
             name="Compost Blends"
             description="You have specific needs for oyster shell, greens, and, worm castings, etc. to apply directly with your compost? West Marin Compost can make your custom blend. You may order the amendments from your supplier and have it delivered to West Marin Compost. A blending fee of $5.00 per finished cubic yards applies, minimum blending fee $25.00."
           />
           <CompostItem
+            key="14"
             image={data.oysterShell}
             name="Marin Oyster Shell"
             description="Oyster shell will help some clay soils in improving drainage. It also helps neutralize soil pH. Oyster shell will enhance plant growth and make plants stronger."
@@ -307,13 +340,16 @@ const ProductsWrapper = styled.div`
   p {
     padding-bottom: 1rem;
   }
-  a {
+  a.priceList {
     text-decoration: none;
     color: ${styles.colors.mainWhite};
   }
-  a:hover {
+  a.priceList:hover {
     text-decoration: none;
     color: ${styles.colors.mainWhite};
+  }
+  a.topper {
+    color: ${styles.colors.mainGreen};
   }
   #calculator {
     text-decoration: none;
