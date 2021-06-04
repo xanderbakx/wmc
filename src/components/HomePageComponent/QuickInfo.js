@@ -32,7 +32,7 @@ export default class QuickInfo extends Component {
         render={data => (
           <Section>
             <QuickInfoWrapper>
-              <h2>Defensible Space Green Material Drop Off Dates 2021</h2>
+              <h2>Defensible Space: Green Material Drop Off Dates 2021</h2>
               <p className="text">
                 As the fire season is already upon us, West Marin Compost and
                 Marin County Fire will be hosting two days where West Marin
@@ -43,19 +43,21 @@ export default class QuickInfo extends Component {
                 this event as an opportunity to walk around your home to assure
                 you have created a Defensible Space. For more information on
                 Defensible Space see this{" "}
-                <a href="https://www.marincounty.org/-/media/files/departments/fr/prevention/2017/dspacebrochure4pg.pdf?la=en">
+                <a
+                  href="https://www.marincounty.org/-/media/files/departments/fr/prevention/2017/dspacebrochure4pg.pdf?la=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   brochure
                 </a>
                 .
               </p>
-              <h3>July 10th | August 14th</h3>
+              <h3>When & Where</h3>
+              <h5>Dates: July 10th | August 14th</h5>
+              <h5>Time: 7:00 am - 3:00 pm</h5>
               <h5>
-                <i>Marin Residents Only</i>
+                Where: West Marin Compost, 5575 Nicasio Valley Rd, Nicasio
               </h5>
-              <h5>
-                <i>Residential Yard Debris Only</i>
-              </h5>
-              <h5>Hours: 7am - 3pm</h5>
               <hr />
 
               <h2>Organics Recycling: Good for the environment</h2>
@@ -74,9 +76,10 @@ export default class QuickInfo extends Component {
                 <li>Sequester carbon (carbon farming/gardening)</li>
               </ul>
               {/* "Know more" links */}
+              <h2>In the know: Go to the links below to be informed</h2>
               <p>
                 Find out more about{" "}
-                <AnchorLink to="/education#carbon-farming">
+                <AnchorLink to="/education#carbon-gardening">
                   Carbon Gardening
                 </AnchorLink>{" "}
                 and how you can help mitigate climate change.
@@ -84,9 +87,17 @@ export default class QuickInfo extends Component {
               <p>
                 Examine your home and garden for fire safety. Yard debris for
                 clearing to meet defensible space requirements can be{" "}
-                <AnchorLink to="/education#">dropped off</AnchorLink> at West
-                Marin Compost on July 10th and August 14th.
+                <AnchorLink to="/drop-off#defensibleSpace">
+                  dropped off
+                </AnchorLink>{" "}
+                at West Marin Compost on July 10th and August 14th.
               </p>
+              <p>
+                Learn about fire safe uses of{" "}
+                <AnchorLink to="/education#lawnConversion">mulches</AnchorLink>{" "}
+                while improving fire safety around the home.
+              </p>
+              <hr />
               <Img
                 style={{ maxWidth: 300, margin: "3rem auto 1rem auto" }}
                 fluid={data.cdfa.childImageSharp.fluid}
@@ -199,6 +210,9 @@ const QuickInfoWrapper = styled.div`
     text-align: left;
   }
   a {
+    color: ${styles.colors.mainGreen};
+  }
+  a:hover {
     color: ${styles.colors.mainGreen};
   }
   .text {
