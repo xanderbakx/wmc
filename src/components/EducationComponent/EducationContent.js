@@ -8,6 +8,7 @@ import Img from "gatsby-image"
 import carbon1 from "../../documents/CarbonGardeningPart1.pdf"
 import carbon2 from "../../documents/CarbonGardeningPart2.pdf"
 import carbon3 from "../../documents/CarbonGardeningPart3.pdf"
+import carbon4 from "../../documents/CarbonGardeningPart4.pdf"
 import lawnConversion from "../../documents/LawnConversion.pdf"
 
 export default class EducationContent extends Component {
@@ -121,6 +122,12 @@ export default class EducationContent extends Component {
                     Carbon Gardening Part 3
                   </a>
                   : Sequestering carbon with compost
+                </li>
+                <li>
+                  <a href={carbon4} target="_blank" rel="noopener noreferrer">
+                    Carbon Gardening Part 4
+                  </a>
+                  : Landscape Carbon Calculator
                 </li>
               </ul>
               <p className="text">
