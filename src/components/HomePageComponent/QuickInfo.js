@@ -134,7 +134,6 @@ export default class QuickInfo extends Component {
                   height="315"
                   src="https://www.youtube.com/embed/XoNtu2SoAPQ"
                   frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
               </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -6,6 +6,7 @@ import { PageHeader, Banner, styles, Title } from "../utils"
 import productsImg from "../images/piles.jpg"
 import CompostItem from "../components/ProductsComponent/CompostItem"
 import styled from "styled-components"
+import { v4 as uuidv4 } from "uuid"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import Button from "react-bootstrap/Button"
@@ -15,19 +16,8 @@ import priceListSp from "../documents/WMC_Lista_de_Precios_2020.pdf"
 
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const ProductsPage = () => {
-  useEffect(() => {
-    let topperMulch = document.querySelector(".products section:nth-child(8)")
-    topperMulch.id = "topperMulch"
-  }, [])
-  const topperClick = () => {
-    let el = document.querySelector(
-      ".products section:nth-child(8) > div:nth-child(1) > :nth-child(1) > :nth-child(2)"
-    )
-    el.classList.add("show")
-  }
   return (
     <StaticQuery
       query={graphql`
@@ -201,17 +191,8 @@ const ProductsPage = () => {
           {
             image: data.pathMulch,
             name: "Marin Path Mulch",
-            description: [
-              "We no longer carry Path Mulch. We recommend the use of our ",
-              <AnchorLink
-                to="/products#topperMulch"
-                className="topper"
-                onAnchorLinkClick={topperClick}
-              >
-                Topper Mulch
-              </AnchorLink>,
-              " instead.",
-            ],
+            description:
+              "We no longer carry Path Mulch. We recommend the use of our Topper Mulch (see above) instead.",
             price: "Discontinued",
           },
           {
@@ -323,12 +304,9 @@ const ProductsPage = () => {
               />
               <div className="products">
                 {products.map(product => {
-                  if (product.name === "Topper Mulch") {
-                    let el = document.firstElementChild
-                    console.log(el)
-                  }
                   return (
                     <CompostItem
+                      key={uuidv4()}
                       image={product.image}
                       name={product.name}
                       description={product.description}
@@ -355,14 +333,8 @@ const ProductsPage = () => {
                 used up to 2 inches thick. Outside of that zone a 3-4 inch layer
                 of mulch can be used. Gorilla Hair mulches should be avoided.
                 The larger woody fraction after composting used as mulch has
-                been rated as the best mulch for a fire safe garden: Our{" "}
-                <AnchorLink
-                  to="/products#topperMulch"
-                  onAnchorLinkClick={topperClick}
-                >
-                  Topper Mulch
-                </AnchorLink>{" "}
-                is that product. Read more what{" "}
+                been rated as the best mulch for a fire safe garden: Our Topper
+                Mulch (see product list above) is that product. Read more what{" "}
                 <a
                   href="https://www.firesafemarin.org/fire-smart-yard/mulches"
                   target="_blank"
