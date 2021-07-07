@@ -15,7 +15,7 @@ export default function HTML(props) {
         {/* Share this */}
         <script
           type="text/javascript"
-          src="//platform-api.sharethis.com/js/sharethis.js#property=5c9989c82c4f3b001126e79d&product=inline-share-buttons"
+          src="https://platform-api.sharethis.com/js/sharethis.js#property=5c9989c82c4f3b001126e79d&product=sop"
           async="async"
         ></script>
       </head>
