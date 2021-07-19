@@ -54,7 +54,7 @@ export default class QuickInfo extends Component {
               </p>
               <h3>When & Where</h3>
               <h5>Dates: July 10th | August 14th</h5>
-              <h5>Time: 7:00 am - 3:00 pm</h5>
+              <h5>Time: 9:00 am - 3:00 pm</h5>
               <h5>
                 Where: West Marin Compost, 5575 Nicasio Valley Rd, Nicasio
               </h5>

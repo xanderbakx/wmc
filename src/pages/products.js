@@ -186,7 +186,7 @@ const ProductsPage = () => {
             name: "Topper Mulch",
             description:
               "This is a dark mulch that has gone through a full compost process. It provides the same benefits as Vineyard mulch, and is perfect for use as a durable top dressing around herbaceous perennials, shrubs, and trees to protect the soil, help conserve water and suppress weeds.  As the mulch contains some fines it will also provide some nutrients over time. Some of this product may float when flooded.",
-            price: "$10 per cubic yard",
+            price: "$12 per cubic yard",
           },
           {
             image: data.pathMulch,
