@@ -11,7 +11,7 @@ import { v4 as uuidv4 } from "uuid"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Button from "react-bootstrap/Button"
 
-import priceListEng from "../documents/WMC_Price_List_2020.pdf"
+import priceListEng from "../documents/WMC_Price_List_Oct_2021.pdf"
 import priceListSp from "../documents/WMC_Lista_de_Precios_2020.pdf"
 
 import { StaticQuery, graphql } from "gatsby"
@@ -207,8 +207,8 @@ const ProductsPage = () => {
             image: data.amendedSoil,
             name: "Marin Amended Soil",
             description:
-              "Plant directly into Amended Soil. It’s great for filling raised beds, replacing poor quality soil, adding elevation or leveling a project site, or filling in behind a retaining wall. Amended Soil is a good-looking blend of clean soil and Mallard Plus. Since a high-quality topsoil is used, rather than a mined soil, no weed-free guarantees can be made.",
-            price: "$54.00 per cubic yard",
+              "Plant directly into Amended Soil. It’s great for filling raised beds, replacing poor quality soil, adding elevation or leveling a project site, or filling in behind a retaining wall. Amended Soil is a good-looking blend of clean soil, Mallard Plus and biochar. The soil is a mined soil, which is weed-free.  When used in pots or raised beds, topsoil tends to crust at the surface.  We recommend that a .5 to 1” layer of Ultra-Light mulch is applied to the surface of the soil to prevent crusting.",
+            price: "$65.00 per cubic yard",
           },
           {
             image: data.biochar,
