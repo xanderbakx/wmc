@@ -11,8 +11,8 @@ import { v4 as uuidv4 } from "uuid"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Button from "react-bootstrap/Button"
 
-import priceListEng from "../documents/WMC_Price_List_Oct_2021.pdf"
-import priceListSp from "../documents/WMC_Lista_de_Precios_2020.pdf"
+import priceListEng from "../documents/WMC_Price_List_2022.pdf"
+import priceListSp from "../documents/WMC_Lista_de_Precios_2022.pdf"
 
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
