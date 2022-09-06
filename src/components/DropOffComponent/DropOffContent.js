@@ -21,32 +21,6 @@ export default class DropOffContent extends Component {
             (415) 662-9849
           </p>
 
-          <h2 id="defensibleSpace">
-            Defensible Space: Green Material Drop Off Dates 2021
-          </h2>
-          <p className="text">
-            As the fire season is already upon us, West Marin Compost and Marin
-            County Fire will be hosting two days where West Marin residents can
-            drop off yard debris to facilitate a fire safe environment around
-            their homes. The Marin County Fire department will be on site to
-            facilitate the drop-off and may be available to answer questions,
-            depending on time availability. Please use this event as an
-            opportunity to walk around your home to assure you have created a
-            Defensible Space. For more information on Defensible Space see this{" "}
-            <a
-              href="https://www.marincounty.org/-/media/files/departments/fr/prevention/2017/dspacebrochure4pg.pdf?la=en"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              brochure
-            </a>
-            .
-          </p>
-          <h3>When & Where</h3>
-          <h5>Dates: July 10th | August 14th</h5>
-          <h5>Time: 9:00 am - 3:00 pm</h5>
-          <h5>Where: West Marin Compost, 5575 Nicasio Valley Rd, Nicasio</h5>
-
           <h2>Drop off fee</h2>
 
           <p className="text">
