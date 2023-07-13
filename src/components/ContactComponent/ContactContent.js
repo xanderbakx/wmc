@@ -30,10 +30,24 @@ export default class ContactContent extends Component {
             />
           </div>
 
-          <p className="text">Phone: (415) 662-9849</p>
-          <p className="text">Orders: nancy@westmarincompost.com</p>
-          <p className="text">Manure hauling: kevin@westmarincompost.com</p>
-          <p className="text">Soil questions: will@westmarincompost.com</p>
+          <p className="text">
+            Phone:{" "}
+            <a className="link" href="tel:+1415-662-9849">
+              (415) 662-9849
+            </a>
+          </p>
+          <p className="text">
+            Orders:{" "}
+            <a className="link" href="mailto:nancy@westmarincompost.com">
+              nancy@westmarincompost.com
+            </a>
+          </p>
+          <p className="text">
+            Manure hauling / Soil questions:{" "}
+            <a className="link" href="mailto:kevin@westmarincompost.com">
+              kevin@westmarincompost.com
+            </a>
+          </p>
         </ContactContentWrapper>
       </Section>
     )
@@ -48,6 +62,10 @@ const ContactContentWrapper = styled.div`
     line-height: 2rem;
     color: ${styles.colors.mainGrey};
     word-spacing: 0.2rem;
+  }
+  a.link {
+    text-decoration: none;
+    color: ${styles.colors.mainBrown};
   }
   .map {
     overflow: hidden;

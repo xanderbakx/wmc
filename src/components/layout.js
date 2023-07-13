@@ -4,15 +4,11 @@ import PropTypes from "prop-types"
 import { createGlobalStyle } from "styled-components"
 import Navbar from "../components/globals/navbar/Navbar"
 import Footer from "../components/globals/Footer"
-// Coronavirus
-import Notice from "../components/globals/notice/Notice"
 
 const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <GlobalStyle />
-      {/* Coronavirus Update */}
-      <Notice />
       <Navbar />
       {children}
       <Footer />

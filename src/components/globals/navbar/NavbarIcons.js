@@ -36,7 +36,7 @@ const IconWrapper = styled.div`
     height: auto;
     display: flex;
     margin-left: 1rem;
-    margin-right: 0.5rem;
-    margin-bottom: 1rem;
+    margin-right: 0.8rem;
+    margin-bottom: 0.1rem;
   }
 `

@@ -61,6 +61,7 @@ export default class NavbarLinks extends Component {
 }
 
 const LinkWrapper = styled.ul`
+  margin-bottom: 0;
   li {
     list-style-type: none;
   }
@@ -78,7 +79,7 @@ const LinkWrapper = styled.ul`
       padding: 0.5rem 1rem 0.5rem 1.3rem;
     }
   }
-  height: ${props => (props.open ? "266px" : "0px")};
+  height: ${props => (props.open ? "280px" : "0px")};
   overflow: hidden;
   ${styles.transObject({ time: "1s" })};
   @media (min-width: 768px) {
@@ -86,6 +87,7 @@ const LinkWrapper = styled.ul`
     display: flex;
     margin-left: auto;
     margin-right: 0;
+    margin-bottom: 0;
     .nav-link:hover {
       background: ${styles.colors.mainWhite};
       padding: 0.5rem 1rem;
