@@ -115,7 +115,7 @@ const ProductsPage = () => {
             name: "Nicasio Blend",
             description:
               "This dark, rich, premium quality compost is made from recycled yard trimmings, dairy manure and horse manure. Nicasio Blend is recommended for applications that do not require high nitrogen content such as trees, shrubs, grape vines and natives. It provides valuable organic matter to soil, making it easier to work and more productive. In sandy soil it increases moisture-holding capacity, making soil nutrients more available to plants. In heavy clay soils, porosity is increased which improves aeration in the root zone and overall drainage.",
-            price: "$36.00 per cubic yard",
+            price: "$40.00 per cubic yard",
           },
           {
             image: data.hiTest,
@@ -129,7 +129,7 @@ const ProductsPage = () => {
             name: "Marin Hi-Test Living Biochar",
             description:
               "Our Hi-Test Compost was amended with biochar to have 15% biochar by volume in the finished product. Since the biochar has been in process with the Hi-Test Compost, the biochar is now fully charged with microbes and nutrients. See below for further details on biochar.",
-            price: "$60.00 per cubic yard",
+            price: "$70.00 per cubic yard",
           },
           {
             image: data.vineyardMulch,
@@ -158,7 +158,7 @@ const ProductsPage = () => {
             name: "Marin Amended Soil",
             description:
               "Plant directly into Amended Soil. It’s great for filling raised beds, replacing poor quality soil, adding elevation or leveling a project site, or filling in behind a retaining wall. Amended Soil is a good-looking blend of clean soil, Mallard Plus and biochar. The soil is a mined soil, which is weed-free.  When used in pots or raised beds, topsoil tends to crust at the surface.  We recommend that a .5 to 1” layer of Ultra-Light mulch is applied to the surface of the soil to prevent crusting.",
-            price: "$60.00 per cubic yard",
+            price: "$80.00 per cubic yard",
           },
           {
             image: data.biochar,
