@@ -51,7 +51,7 @@ export default class DropOffContent extends Component {
             <div className="grid-item">Green material</div>
             <div className="grid-item">$40/cubic yard</div>
             <div className="grid-item">Tree trunks</div>
-            <div className="grid-item">$90/ton</div>
+            <div className="grid-item">$125/ton</div>
             <div className="grid-item">Tree stumps up to 1' diameter</div>
             <div className="grid-item">$110 each</div>
             <div className="grid-item">Tree stumps up to 2' diameter</div>
