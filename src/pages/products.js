@@ -122,7 +122,7 @@ const ProductsPage = () => {
             name: "Marin Hi-Test Compost",
             description:
               "All the benefits of Nicasio Blend but with higher nitrogen content from the inclusion of High-N Manure such as goat and chicken. Hi-Test Compost is great for new gardens and landscapes, especially where soils have been neglected or overworked. In addition to improving soil structure, our Hi-Test Compost will give new plants the nitrogen needed for a vibrant start.",
-            price: "$46.00 per cubic yard",
+            price: "$50.00 per cubic yard",
           },
           {
             image: data.livingBiochar,
